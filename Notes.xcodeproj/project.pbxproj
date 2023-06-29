@@ -9,21 +9,34 @@
 /* Begin PBXBuildFile section */
 		7C847BB929D8DC14006FC7C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C847BB829D8DC14006FC7C1 /* AppDelegate.swift */; };
 		7C847BBB29D8DC14006FC7C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C847BBA29D8DC14006FC7C1 /* SceneDelegate.swift */; };
-		7C847BBD29D8DC14006FC7C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C847BBC29D8DC14006FC7C1 /* ViewController.swift */; };
 		7C847BC029D8DC14006FC7C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C847BBE29D8DC14006FC7C1 /* Main.storyboard */; };
 		7C847BC229D8DC15006FC7C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C847BC129D8DC15006FC7C1 /* Assets.xcassets */; };
 		7C847BC529D8DC15006FC7C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C847BC329D8DC15006FC7C1 /* LaunchScreen.storyboard */; };
+		7C847BCE29D8DC54006FC7C1 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 7C847BCD29D8DC54006FC7C1 /* SQLite */; };
+		7C847BD029D8DC63006FC7C1 /* Notes.db in Resources */ = {isa = PBXBuildFile; fileRef = 7C847BCF29D8DC63006FC7C1 /* Notes.db */; };
+		7C847BD229D8DCA7006FC7C1 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C847BD129D8DCA7006FC7C1 /* DBHelper.swift */; };
+		7C847BD429D8DDF4006FC7C1 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C847BD329D8DDF4006FC7C1 /* Note.swift */; };
+		7C847BD829D8E12F006FC7C1 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C847BD729D8E12F006FC7C1 /* AddNoteViewController.swift */; };
+		7CD9AF7329EB29C900CCE141 /* NoteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD9AF7229EB29C900CCE141 /* NoteCollectionViewCell.swift */; };
+		7CD9AF7529EB2AC900CCE141 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD9AF7429EB2AC900CCE141 /* NotesViewController.swift */; };
+		7CEF74EA29F5AE3400C2B85F /* NotesLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEF74E929F5AE3400C2B85F /* NotesLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7C847BB529D8DC14006FC7C1 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C847BB829D8DC14006FC7C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C847BBA29D8DC14006FC7C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7C847BBC29D8DC14006FC7C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7C847BBF29D8DC14006FC7C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C847BC129D8DC15006FC7C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C847BC429D8DC15006FC7C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C847BC629D8DC15006FC7C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C847BCF29D8DC63006FC7C1 /* Notes.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Notes.db; sourceTree = "<group>"; };
+		7C847BD129D8DCA7006FC7C1 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		7C847BD329D8DDF4006FC7C1 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		7C847BD729D8E12F006FC7C1 /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		7CD9AF7229EB29C900CCE141 /* NoteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCollectionViewCell.swift; sourceTree = "<group>"; };
+		7CD9AF7429EB2AC900CCE141 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		7CEF74E929F5AE3400C2B85F /* NotesLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +44,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C847BCE29D8DC54006FC7C1 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48B677CF0FF7B5F5E1C0380E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7C847BAC29D8DC14006FC7C1 = {
 			isa = PBXGroup;
 			children = (
+				7C847BD129D8DCA7006FC7C1 /* DBHelper.swift */,
+				7C847BCF29D8DC63006FC7C1 /* Notes.db */,
 				7C847BB729D8DC14006FC7C1 /* Notes */,
 				7C847BB629D8DC14006FC7C1 /* Products */,
+				48B677CF0FF7B5F5E1C0380E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +82,11 @@
 			children = (
 				7C847BB829D8DC14006FC7C1 /* AppDelegate.swift */,
 				7C847BBA29D8DC14006FC7C1 /* SceneDelegate.swift */,
-				7C847BBC29D8DC14006FC7C1 /* ViewController.swift */,
+				7C847BD729D8E12F006FC7C1 /* AddNoteViewController.swift */,
+				7CD9AF7429EB2AC900CCE141 /* NotesViewController.swift */,
+				7CD9AF7229EB29C900CCE141 /* NoteCollectionViewCell.swift */,
+				7CEF74E929F5AE3400C2B85F /* NotesLayout.swift */,
+				7C847BD329D8DDF4006FC7C1 /* Note.swift */,
 				7C847BBE29D8DC14006FC7C1 /* Main.storyboard */,
 				7C847BC129D8DC15006FC7C1 /* Assets.xcassets */,
 				7C847BC329D8DC15006FC7C1 /* LaunchScreen.storyboard */,
@@ -83,6 +111,9 @@
 			dependencies = (
 			);
 			name = Notes;
+			packageProductDependencies = (
+				7C847BCD29D8DC54006FC7C1 /* SQLite */,
+			);
 			productName = Notes;
 			productReference = 7C847BB529D8DC14006FC7C1 /* Notes.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +142,9 @@
 				Base,
 			);
 			mainGroup = 7C847BAC29D8DC14006FC7C1;
+			packageReferences = (
+				7C847BCC29D8DC54006FC7C1 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			productRefGroup = 7C847BB629D8DC14006FC7C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C847BD029D8DC63006FC7C1 /* Notes.db in Resources */,
 				7C847BC529D8DC15006FC7C1 /* LaunchScreen.storyboard in Resources */,
 				7C847BC229D8DC15006FC7C1 /* Assets.xcassets in Resources */,
 				7C847BC029D8DC14006FC7C1 /* Main.storyboard in Resources */,
@@ -138,9 +173,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C847BBD29D8DC14006FC7C1 /* ViewController.swift in Sources */,
+				7C847BD429D8DDF4006FC7C1 /* Note.swift in Sources */,
+				7CEF74EA29F5AE3400C2B85F /* NotesLayout.swift in Sources */,
+				7C847BD829D8E12F006FC7C1 /* AddNoteViewController.swift in Sources */,
 				7C847BB929D8DC14006FC7C1 /* AppDelegate.swift in Sources */,
 				7C847BBB29D8DC14006FC7C1 /* SceneDelegate.swift in Sources */,
+				7C847BD229D8DCA7006FC7C1 /* DBHelper.swift in Sources */,
+				7CD9AF7529EB2AC900CCE141 /* NotesViewController.swift in Sources */,
+				7CD9AF7329EB29C900CCE141 /* NoteCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,12 +335,10 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.Notes;
+				PRODUCT_BUNDLE_IDENTIFIER = NotesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -323,12 +361,10 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.Notes;
+				PRODUCT_BUNDLE_IDENTIFIER = NotesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -358,6 +394,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C847BCC29D8DC54006FC7C1 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7C847BCD29D8DC54006FC7C1 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C847BCC29D8DC54006FC7C1 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7C847BAD29D8DC14006FC7C1 /* Project object */;
 }
